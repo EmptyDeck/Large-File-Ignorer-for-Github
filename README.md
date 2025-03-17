@@ -1,3 +1,5 @@
+![Use Demo Gif](demo.gif)
+
 # GitIgnore Large Files
 
 A Python script that scans for files larger than **100 MB** and automatically add them to your `.gitignore` file. This prevents large files from being accidentally committed in the future.
