@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python ignore_big_files.py --help)",
+      "Bash(git -C /c/AAAA/Large-File-Ignorer-for-Github log --oneline -10)",
+      "Bash(git -C /c/AAAA/Large-File-Ignorer-for-Github status)",
+      "Bash(git -C /c/AAAA/Large-File-Ignorer-for-Github diff HEAD~1 HEAD -- ignore_big_files.py)",
+      "Bash(git -C /c/AAAA/Large-File-Ignorer-for-Github show b6d454a --stat)"
+    ]
+  }
+}
