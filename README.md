@@ -13,7 +13,7 @@ Scans for files larger than **100 MB** and automatically adds them to `.gitignor
    ```
    python ignore_big_files.py
    ```
-
+OR
 ### Windows Batch (no Python required)
 
 1. Copy `add_large_files_to_gitignore.bat` into the root of your git repository.
