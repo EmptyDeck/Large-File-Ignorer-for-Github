@@ -2,22 +2,26 @@
 
 # GitIgnore Large Files
 
-A Python script that scans for files larger than **100 MB** and automatically add them to your `.gitignore` file. This prevents large files from being accidentally committed in the future.
+Scans for files larger than **100 MB** and automatically adds them to `.gitignore`.
 
-## Installation and Usage
+## Usage
 
-1. **Download the Python file**
+### Python (cross-platform)
 
-    - Download the `ignore_big_files.py` file from this repository to your local machine.
+1. Copy `ignore_big_files.py` into the root of your git repository.
+2. Run it:
+   ```
+   python ignore_big_files.py
+   ```
 
-2. **Run It**
+### Windows Batch (no Python required)
 
-    - Place the py file in the **top-level directory** (or wherever you want to manage `.gitignore`).
-    - Rut it
+1. Copy `add_large_files_to_gitignore.bat` into the root of your git repository.
+2. Double-click it or run it from a command prompt.
 
-3. **Automatic Git Ignore**
-    - The script will scan for any files larger than **100 MB**.
-    - If a `.gitignore` file already exists, the script **appends** a new entry with paths to files exceeding 100 MB.
-    - If `.gitignore` does not exist, it creates one for you and includes those large files.
+## Notes
 
-That’s it! You should now have a `.gitignore` set to automatically **ignore** all files over **100 MB** in your repository. Make sure to commit your updated `.gitignore` to keep it in version control.
+- Must be run from the **root** of a git repository.
+- If `.gitignore` does not exist, it is created automatically.
+- Already-ignored paths are not added a second time.
+- Commit your updated `.gitignore` to keep it in version control.
